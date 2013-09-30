@@ -20,17 +20,7 @@
 	
 	// 
 
-	$(document).ready(function () {
-	
-// Accepts Enter key for input
-		$('#itemEntry').keyup(function(ev){
-			if(ev.keyCode == 13){
-				addItem();
-				$('#itemEntry').val('');
-			}
-			})
-	
-//Resets List 
+	//Resets List 
 		$('#reset').click(function(){
 			$('#shopList').empty();
 		});
@@ -43,6 +33,18 @@
 		$(document).on('click', '.checkBox', function(){
 			$(this).closest('p').toggleClass('checked');
 		})
+
+	$(document).ready(function () {
+	
+// Accepts Enter key for input
+		$('#itemEntry').keyup(function(ev){
+			if(ev.keyCode == 13){
+				addItem();
+				$('#itemEntry').val('');
+			}
+			})
+	
+
 
 	});
 
