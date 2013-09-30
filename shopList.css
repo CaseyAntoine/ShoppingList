@@ -512,9 +512,6 @@ p.checked {
     text-decoration: line-through;
 }
 
-.hidden{
-    display:none;
-}
 #shopList .removeItem{
     margin-left:10px;
 }

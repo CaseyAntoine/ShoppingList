@@ -23,8 +23,8 @@
 	$(document).ready(function () {
 	
 // Accepts Enter key for input
-		$('#itemEntry').keyup(function(enter){
-			if(enter.keyCode == 13){
+		$('#itemEntry').keyup(function(ev){
+			if(ev.keyCode == 13){
 				addItem();
 			}
 			})
