@@ -8,7 +8,13 @@
 	function addItem(){
 		var item = $('#itemEntry').val();
 		var list = '<p>' + check + item + remove +'</p>';
-		$('#shopList').prepend(list);
+		
+		if(item == 0){
+			alert('Enter text to add items to the list');
+
+		} else{
+
+		$('#shopList').prepend(list);}
 	};
 	
 	
