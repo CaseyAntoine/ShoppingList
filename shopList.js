@@ -26,6 +26,7 @@
 		$('#itemEntry').keyup(function(ev){
 			if(ev.keyCode == 13){
 				addItem();
+				$('#itemEntry').val('');
 			}
 			})
 	
