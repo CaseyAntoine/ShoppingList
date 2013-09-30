@@ -501,18 +501,21 @@ button#reset{
     font-family: 'Comic Sans MS', Helvetica;
 }
 
-#shopList span{
+#shopList button{
+    margin-left:10px;
     font-size: 10px;
-    color:#FF0000;
-    text-decoration: underline;
-    cursor:pointer;
+    color:#FFFFFF;
+    background:#FF0000;
+    border:none;
+    border-radius:10px;
+}
+
+#shopList input.checkBox{
+    margin-right:10px;
 }
 
 p.checked {
     text-decoration: line-through;
-}
-
-#shopList .removeItem{
-    margin-left:10px;
+    color:#999;
 }
 

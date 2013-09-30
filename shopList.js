@@ -2,12 +2,12 @@
 
 //Global variables
 	var check = '<input class=" checkBox" type="checkbox">';
-	var remove = '<span class="removeItem">Remove</span>';
+	var remove = '<button class="remove">Remove</button>';
 
 //Function to add list items
 	function addItem(){
 		var item = $('#itemEntry').val();
-		var list = '<p>' + check + item + remove + '</p>';
+		var list = '<p>' + check + item + remove +'</p>';
 		$('#shopList').prepend(list);
 	};
 	
@@ -25,13 +25,14 @@
 			$('#shopList').empty();
 		});
 //Removes Item
-		$(document).on('click', '.removeItem', function(){
+		$(document).on('click', '.remove', function(){
 			$(this).closest('p').fadeOut(500);
 		})
 
 //Checks list item
 		$(document).on('click', '.checkBox', function(){
 			$(this).closest('p').toggleClass('checked');
+			
 		})
 
 	$(document).ready(function () {
