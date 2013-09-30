@@ -28,7 +28,7 @@
 
 	//Resets List 
 		$('#reset').click(function(){
-			$('#shopList').empty();
+			$('#shopList').reload();
 		});
 //Removes Item
 		$(document).on('click', '.remove', function(){
